@@ -27,7 +27,7 @@ The frontend and backend run as two separate processes locally, but are served t
 ```bash
 cd server
 npm install
-cp .env.example .env   # fill in real values — see "Environment variables" below
+cp .env.example .env   
 node server.js
 ```
 Runs on `http://localhost:3001`.
