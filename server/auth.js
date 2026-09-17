@@ -32,6 +32,7 @@ router.get("/auth/github/callback", async (req, res) => {
     });
     const tokenData = await tokenRes.json();
     if (!tokenData.access_token) {
+      console.error("GitHub token exchange response:", tokenData);
       return res.status(401).send("GitHub OAuth exchange failed");
     }
 
